@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -9,81 +9,98 @@ body{
     background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
     min-height: 100vh;
-    padding-bottom: 50px;
-}
-
-.pageLinks{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.05);
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-}
-
-.followlinks{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    position: relative;
-}
-
-.heading1{
-    text-align: center;
-    font-size: 3rem;
-    margin: 40px 0px;
-    letter-spacing: 2px;
 }
 
 #div1{
-    width: 95%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.05);
 }
 
-.box{
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 20px;
+#header{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
 }
 
-.box h1{
-    margin-bottom: 15px;
-    font-size: 1.5rem;
+#head1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.box h1 a{
+#dogpic{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+}
+
+#nav1{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+}
+
+#nav1 a{
     text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-width: bold;
+    position: relative;
+}
+
+#nav1 a:hover{
     color: #38bdf8;
 }
 
-.box h1 a:hover{
-    color: white;
+#div2{
+    text-align: center;
+    padding: 20px 20px 80px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.box img{    object-fit: cover;
-    border-radius: 12px;
+#head2{
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+#div2 p{
+    color: #d1d5bd;
     margin-bottom: 15px;
-    transition: 0.3s;
 }
 
-.box:hover img{
-    transform: scale(1.03)
+.boxdivs{
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding-bottom: 100px;
 }
 
-.box p{
-    line-height: 1.6;
-    color: #d1d5db;
-    font-size: 0.95rem;
+.box1{
+    background: rgba( 255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box1 h2{
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.box1 p{
+    color: #d1d5bd;
+    line-height: 1.7;
 }
 
 footer{
